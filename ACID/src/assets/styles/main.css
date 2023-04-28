@@ -1,0 +1,154 @@
+html {
+	--acid-color: rgb(42, 163, 247);
+	--acid-color-dark-light: #E7F6F2;
+	--acid-color-dark-light-medium: #A5C9CA;
+	--acid-color-dark-medium: #395B64;
+	--acid-color-dark: #2C3333;
+}
+
+.tabContainer {
+	width: 50%;
+}
+
+.listItem,
+.lien {
+	cursor: pointer;
+}
+
+.shadow-navbar {
+	box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.15);
+}
+.darkmode .shadow-navbar {
+	box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+	font-weight: 200;
+}
+
+h2 {
+	font-weight: 200;
+	font-variant: small-caps;
+}
+
+h3 {
+	font-size: 1.1em;
+	letter-spacing: 3px;
+	text-align: center;
+	font-weight: 200;
+	text-transform: uppercase !important;
+}
+
+.returnButton {
+	/*background-color: white;*/
+}
+
+.shadow-navbar {
+	margin-left: -10px;
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.03);
+}
+
+.logo {
+	width: 45px;
+	opacity: 0.12;
+	position: absolute !important;
+	top: 20px !important;
+	left: 20px;
+	width: 50px;
+}
+.darkmode .logo{
+	opacity: 100%;
+}
+
+.navbar-collapse {
+	margin-top: auto;
+}
+
+.navbar-collapse, .container-fluid {
+	height: 100px;
+}
+
+.chevron {
+	width: 10px;
+	height: 15px;
+	margin-top: -2px;
+	color: var(--acid-color);
+}
+
+#navbar .nav-item .nav-link {
+	border: none;
+	border-bottom: 4px white solid;
+	color: black;
+	font-size: 1.2em;
+}
+
+#navbar .nav-item .nav-link.active {
+	border-bottom-color: var(--acid-color);
+	font-weight: bold;
+}
+
+#navbar .nav-item .nav-link:hover {
+	color: var(--acid-color);
+}
+
+.text-primary {
+	color: var(--acid-color) !important;
+}
+
+.darkmode{
+	height: 100vh;
+	overflow-y: auto;
+}
+
+.darkmode, .darkmode #navbar .nav-link.active,
+.darkmode #navbar .nav-item a.nav-link, .darkmode .listItem,
+.darkmode .list-group .lien.list-group-item
+{
+	background-color: var(--acid-color-dark);
+	color: var(--acid-color-dark-light);
+}
+.darkmode #stepper button span, .darkmode .lien.text-primary,
+.darkmode textarea.form-control,.darkmode textarea.form-control::placeholder,
+.darkmode .css-1insrsq-control .css-lr9fot-singleValue,
+.darkmode .logo,
+.darkmode .select div div:first-child {
+	color: var(--acid-color-dark-light)!important;
+}
+.darkmode #stepper button svg text{
+	fill: var(--acid-color-dark);
+}
+
+.darkmode #navbar .nav-item .nav-link {
+	border-bottom-color: var(--acid-color-dark);
+}
+.darkmode #navbar .nav-item .nav-link.active {
+	border-bottom-color: var(--acid-color-dark-light-medium);
+}
+
+.darkmode #navbar .nav-item .nav-link:hover,
+.darkmode #stepper svg{
+	color: var(--acid-color-dark-light-medium);
+}
+
+input#dark-theme:checked{
+	background-color: var(--acid-color-dark-light-medium);
+}
+
+input#dark-theme:checked{
+	border-color: var(--acid-color-dark-light-medium);
+}
+
+.darkmode .chevron{
+	color: var(--acid-color-dark-light-medium) ;
+}
+
+.darkmode .listItem, .darkmode .list-group .lien.list-group-item{
+	border-color: var(--acid-color-dark-light);
+}
+
+.darkmode textarea.form-control, .darkmode .css-1insrsq-control, .darkmode .select > *{
+	background-color: var(--acid-color-dark-medium);
+}
+.darkmode .select div :hover{
+	color: var(--acid-color-dark-medium);
+}

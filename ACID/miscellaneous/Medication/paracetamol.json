@@ -1,0 +1,47 @@
+{
+    "resourceType": "Medication",
+    "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "text": "Paracétamol"
+            },
+            "value": "paracetamol",
+            "period": {
+                "start": "2022-09-14",
+                "end": "2022-10-14"
+            }
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "32507002",
+                "display": "Paracetamol 500mg tablets"
+            }
+        ],
+        "text": "Paracetémol 500mg comprimés"
+    },
+    "status": "active",
+    "manufacturer": {
+        "reference": "https://fhir.alliance4u.io/api/organization/6322d84f76c6f7001a59728a",
+        "type": "Organization",
+        "text": "ACID"
+    },
+    "form": "tablets",
+    "amount": {
+        "numerator": {
+            "value": 500,
+            "unit": "mg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+        },
+        "denominator": {
+            "value": 1,
+            "unit": "tablet",
+            "system": "http://unitsofmeasure.org",
+            "code": "tablet"
+        }
+    }
+}

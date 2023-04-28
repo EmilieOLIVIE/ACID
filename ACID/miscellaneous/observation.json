@@ -1,0 +1,36 @@
+{
+    "resourceType": "Observation",
+    "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "text": "Observation"
+            },
+            "value": "Observation1",
+            "period": {
+                "start": "2022-09-14",
+                "end": "2022-10-14"
+            }
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "coding": [
+                    {
+                      "system": "http://www.alliance4u.io",
+                      "code": "XYZ123",
+                      "display": "Observation"
+                    }
+                  ]
+                }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/007"
+    },
+    "performer": {
+        "reference": "Practitioner/6321f0ead83022001917f14e"
+    },
+    "conclusion": "The patient is healthy" 
+}

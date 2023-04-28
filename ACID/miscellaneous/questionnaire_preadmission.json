@@ -1,0 +1,180 @@
+
+{
+    "resourceType": "Questionnaire",
+    "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "text": "Questionnaire"
+            },
+            "value": "QuestionnaireACID",
+            "period": {
+                "start": "2022-09-14",
+                "end": "2022-10-14"
+            }
+        }
+    ],
+    "version": "1.0",
+    "title": "Questionnaire de pré-admission",
+    "status": "active",
+    "experimental": false,
+    "subjectType": [
+        "Patient"
+    ],
+    "publisher": "ACID",
+    "contact": [
+        {
+            "name": "ACID",
+            "telecom": [
+                {
+                    "system": "email",
+                    "value": "acid@replyto.fr",
+                    "use": "work",
+                    "rank": 1,
+                    "period": {
+                        "start": "2022-09-14",
+                        "end": "2022-10-14"
+                    }        
+                }
+            ]
+        }
+    ],
+    "description": "Questionnaire de pré-admission",
+    "purpose": "Questionnaire de pré-admission en prévision d'une consultation",
+    "effectivePeriod": {
+        "start": "2022-09-14",
+        "end": "2022-10-14"
+    },
+    "item": [
+        {
+            "linkId": "motifConsultation",
+            "text": "Motif de la consultation",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "code": "nouvelle",
+                        "display": "Première consultation"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "medecineGenerale",
+                        "display": "Consultation de médecine générale"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "nutrition",
+                        "display": "Consultation de suivi nutritionnel"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "autre",
+                        "display": "Autre"
+                    }
+                }
+            ],
+            "required": true
+        },
+        {
+            "linkId": "dateConsultation",
+            "text": "Date de la consultation",
+            "type": "date",
+            "required": true
+        },
+        {
+            "linkId": "poidsActuel",
+            "text": "Poids actuel (kg)",
+            "type": "decimal",
+            "required": true
+        },
+        {
+            "linkId": "poidsCible",
+            "text": "Poids ciblé (kg)",
+            "type": "decimal",
+            "required": false
+        },
+        {
+            "linkId": "tensionArterielleSystolique",
+            "text": "Tension artérielle systolique (mmHg)",
+            "type": "decimal",
+            "required": true
+        },
+        {
+            "linkId": "tensionArterielleDiastolique",
+            "text": "Tension artérielle diastolique (mmHg)",
+            "type": "decimal",
+            "required": true
+        },
+        {
+            "linkId": "temperatureCorporelle",
+            "text": "Température corporelle (°C)",
+            "type": "decimal",
+            "required": true
+        },
+        {
+            "linkId": "frequenceCardiaque",
+            "text": "Fréquence cardiaque (bpm)",
+            "type": "integer",
+            "required": true
+        },
+        {
+            "linkId": "frequenceRespiratoire",
+            "text": "Fréquence respiratoire (cycles par minute)",
+            "type": "integer",
+            "required": false
+        },
+        {
+            "linkId": "changementRegime",
+            "text": "Avez-vous changé de régime depuis votre dernière consultation ?",
+            "type": "boolean",
+            "required": false
+        },
+        {
+            "linkId": "menopause",
+            "text": "Êtes-vous devenu ménopausé depuis votre dernière consultation ?",
+            "type": "boolean",
+            "required": false
+        },
+        {
+            "linkId": "fumeur",
+            "text": "Si vous étiez fumeur, avez-vous arrêté depuis votre dernière consultation ?",
+            "type": "boolean",
+            "required": false
+        },
+        {
+            "linkId": "activitePhysique",
+            "text": "Avez-vous augmenté ou diminué votre activité physique depuis votre dernière consultation ?",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "code": "augmente",
+                        "display": "Augmenté"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "diminue",
+                        "display": "Diminué"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "aucun",
+                        "display": "Aucun changement"
+                    }
+                }
+            ],
+            "required": false
+        },
+        {
+            "linkId": "autresRemarques",
+            "text": "Autres remarques",
+            "type": "string",
+            "required": false
+        }
+    ]
+}

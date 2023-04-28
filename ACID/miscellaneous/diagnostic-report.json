@@ -1,0 +1,32 @@
+{
+    "resourceType": "DiagnosticReport",
+    "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "text": "Diagnostic Report"
+            },
+            "value": "DiagnosticReport1",
+            "period": {
+                "start": "2022-09-14",
+                "end": "2022-10-14"
+            }
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "LP217198-3",
+                "display": "Hepatitis B surface antigen [Presence] in Serum or Plasma"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/007"
+    },
+    "performer": {
+        "reference": "Practitioner/6321f0ead83022001917f14e"
+    },
+    "conclusion": "The patient is healthy" 
+}
